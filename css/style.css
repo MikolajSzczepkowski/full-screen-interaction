@@ -71,6 +71,7 @@ ul li {
 	margin-bottom: 30px;
 	border: 1px solid #000;
 	border-radius: 50%;
+	cursor: pointer;
 	color: #fff;
 }
 
@@ -136,13 +137,13 @@ ul li:nth-of-type(4) .stripe{
 	background-image: url(../images/stripe4.png);
 }
 
-.content {
-	top: 90px;
+.active ~ .content {
 	transform: scale(1);
 }
 
 .content {
 	position: absolute;
+	top: 90px;
 	width: 200px;
 	transform: scale(0);
 	transition: transform .3s;
